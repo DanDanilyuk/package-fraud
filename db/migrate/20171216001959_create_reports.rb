@@ -7,6 +7,7 @@ class CreateReports < ActiveRecord::Migration[5.1]
       t.string :notes
       t.integer :code
       t.integer :price
+      t.integer :address_id
       t.timestamps
     end
   end
