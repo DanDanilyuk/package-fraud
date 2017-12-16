@@ -6,7 +6,7 @@ class CreateReports < ActiveRecord::Migration[5.1]
       t.string :carrier
       t.string :notes
       t.integer :code
-      t.integer :price
+      t.float :price, :precision => 8, :scale => 2
       t.integer :address_id
       t.timestamps
     end
