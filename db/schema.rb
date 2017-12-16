@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20171216001959) do
     t.string "carrier"
     t.string "notes"
     t.integer "code"
-    t.integer "price"
+    t.float "price"
     t.integer "address_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
