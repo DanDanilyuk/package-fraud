@@ -7,4 +7,6 @@ class Report < ApplicationRecord
   validates :notes, :presence => true
   validates :code, :presence => true
   validates :price, :presence => true
+  validates :address_id, :presence => true
+
 end
