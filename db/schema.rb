@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20171216001959) do
     t.string "city"
     t.string "state"
     t.integer "zip"
+    t.integer "orders_checked", default: 1
+    t.integer "risk", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
