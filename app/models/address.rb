@@ -5,7 +5,8 @@ class Address < ApplicationRecord
   validates :city, :presence => true
   validates :state, :presence => true
   validates :zip, :presence => true
-
+  validates :orders_checked, :presence => true
+  validates :risk, :presence => true
 
   before_save :upcase_fields
   before_save :standardize_address
