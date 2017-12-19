@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/dan/Desktop/package_fraud/spec/controllers/checks_controller_spec.rb": [
+      "/Users/dan/Desktop/package_fraud/spec/controllers/check_controller_spec.rb": [
         1,
         null,
         1,
@@ -260,14 +260,21 @@
       "/Users/dan/Desktop/package_fraud/spec/factories/addresses.rb": [
         1,
         1,
-        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
       "/Users/dan/Desktop/package_fraud/spec/factories/reports.rb": [
         1,
         1,
-        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -277,7 +284,7 @@
         1,
         null
       ],
-      "/Users/dan/Desktop/package_fraud/app/controllers/checks_controller.rb": [
+      "/Users/dan/Desktop/package_fraud/app/controllers/check_controller.rb": [
         1,
         1,
         0,
@@ -336,6 +343,7 @@
       "/Users/dan/Desktop/package_fraud/app/controllers/application_controller.rb": [
         1,
         1,
+        1,
         null,
         1,
         0,
@@ -351,6 +359,7 @@
         0,
         0,
         0,
+        null,
         0,
         0,
         0,
@@ -361,6 +370,7 @@
         0,
         0,
         0,
+        null,
         0,
         0,
         0,
@@ -419,6 +429,10 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        null,
         0,
         null,
         null
@@ -432,14 +446,29 @@
         null,
         null
       ],
-      "/Users/dan/Desktop/package_fraud/spec/controllers/reports_controller_spec.rb": [
+      "/Users/dan/Desktop/package_fraud/app/controllers/concerns/error.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        0,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/dan/Desktop/package_fraud/spec/controllers/report_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/dan/Desktop/package_fraud/app/controllers/reports_controller.rb": [
+      "/Users/dan/Desktop/package_fraud/app/controllers/report_controller.rb": [
         1,
         1,
         0,
@@ -488,7 +517,28 @@
         1,
         null,
         1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
         1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
         null
       ],
       "/Users/dan/Desktop/package_fraud/app/models/address.rb": [
@@ -554,6 +604,6 @@
         null
       ]
     },
-    "timestamp": 1513711539
+    "timestamp": 1513722449
   }
 }
