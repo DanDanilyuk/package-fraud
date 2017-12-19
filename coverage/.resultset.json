@@ -575,7 +575,29 @@
         1,
         null,
         1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
         1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
         null
       ],
       "/Users/dan/Desktop/package_fraud/app/models/report.rb": [
@@ -604,6 +626,6 @@
         null
       ]
     },
-    "timestamp": 1513722449
+    "timestamp": 1513723227
   }
 }
