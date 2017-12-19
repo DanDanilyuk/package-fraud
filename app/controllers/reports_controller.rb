@@ -7,6 +7,7 @@ class ReportsController < ApplicationController
       @address = Address.create(street: reports_params[:street], city: reports_params[:city], state: reports_params[:state], zip: reports_params[:zip])
     end
     @report = Report.create(name: reports_params[:name], date: reports_params[:date], carrier: reports_params[:carrier], notes: reports_params[:notes], code: reports_params[:code], price: reports_params[:price], address_id: @address.id)
+    @report.risk_update
     json_response(@report)
   end
 
