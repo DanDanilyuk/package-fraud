@@ -1,36 +1,37 @@
 class ChecksController < ApplicationController
-  def index
-    @reports = Report.all
-    json_response(@reports)
+  def create
+    standardize(checks_params)
+    if @address = Address.where(street: checks_params[:street], city: checks_params[:city], state: checks_params[:state], zip: checks_params[:zip]).first
+      @address.update(orders_checked: (@address.orders_checked + 1))
+      render status: 201, json: { message: "Address is in database. Here is your report.",
+                                        id: @address.id,
+                                        rating: @address.street,
+                                        content: @address.city,
+                                        user_id: @address.state,
+                                        destination_id: @address.zip,
+                                        orders_checked: @address.orders_checked,
+                                        risk: @address.risk }
+    else
+      @address = Address.create(street: checks_params[:street], city: checks_params[:city], state: checks_params[:state], zip: checks_params[:zip])
+      render status: 201, json: { message: "Address was not in database. Here is your report.",
+                                        id: @address.id,
+                                        rating: @address.street,
+                                        content: @address.city,
+                                        user_id: @address.state,
+                                        destination_id: @address.zip,
+                                        orders_checked: @address.orders_checked,
+                                        risk: @address.risk }
+    end
   end
 
   def show
-    @report = Report.find(params[:id])
-    @address = @report.address
-    json_response(@report)
+    @address = Address.find(params[:id])
+    json_response([@address,@address.reports])
   end
 
   private
 
-  def report_params
-    params.permit(:rating, :content, :user_id, :destination_id)
+  def checks_params
+    params.permit(:street, :city, :state, :zip)
   end
 end
-
-create_table "addresses", force: :cascade do |t|
-  t.string "street"
-  t.string "city"
-  t.string "state"
-  t.integer "zip"
-  t.datetime "created_at", null: false
-  t.datetime "updated_at", null: false
-end
-
-create_table "reports", force: :cascade do |t|
-  t.string "name"
-  t.string "date"
-  t.string "carrier"
-  t.string "notes"
-  t.integer "code"
-  t.float "price"
-  t.integer "address_id"
