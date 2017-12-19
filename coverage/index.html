@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-12-19T14:40:27-08:00">2017-12-19T14:40:27-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-12-19T15:10:44-08:00">2017-12-19T15:10:44-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">55.0%</span></span>
+    (<span class="covered_percent"><span class="red">58.9%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.67
+         0.75
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>28</b> files in total.
-    <b>280</b> relevant lines. 
-    <span class="green"><b>154</b> lines covered</span> and
-    <span class="red"><b>126</b> lines missed </span>
+    <b>29</b> files in total.
+    <b>292</b> relevant lines. 
+    <span class="green"><b>172</b> lines covered</span> and
+    <span class="red"><b>120</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -102,12 +102,12 @@
       
       <tr>
         <td class="strong"><a href="#e6f096c96a8601a63899829b2514f3762ad56dd2" class="src_link" title="app/models/address.rb">app/models/address.rb</a></td>
-        <td class="red strong">62.5 %</td>
+        <td class="green strong">100.0 %</td>
         <td>23</td>
         <td>16</td>
-        <td>10</td>
-        <td>6</td>
-        <td>0.6</td>
+        <td>16</td>
+        <td>0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -281,23 +281,33 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#d955939c33ee06997eba8002ff0200f92efcb946" class="src_link" title="spec/factories/addresses.rb">spec/factories/addresses.rb</a></td>
+        <td class="strong"><a href="#1d6f621e7f889555e2b855afa52c61f2c24af01c" class="src_link" title="spec/factories/address.rb">spec/factories/address.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#a4f01315312c29fe38cc4e975bac4c3568fc06f7" class="src_link" title="spec/factories/reports.rb">spec/factories/reports.rb</a></td>
+        <td class="strong"><a href="#15e6059b7d0506819c7b76b190759b82fc837c72" class="src_link" title="spec/factories/report.rb">spec/factories/report.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>10</td>
         <td>8</td>
         <td>8</td>
         <td>0</td>
         <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#8bd34d59e815913a31530809478848b6afdce5f9" class="src_link" title="spec/models/address_risk_checker_spec.rb">spec/models/address_risk_checker_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>31</td>
+        <td>11</td>
+        <td>11</td>
+        <td>0</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
@@ -1716,11 +1726,11 @@
         <div class="source_table" id="e6f096c96a8601a63899829b2514f3762ad56dd2">
   <div class="header">
     <h3>app/models/address.rb</h3>
-    <h4><span class="red">62.5 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>16</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -1805,38 +1815,38 @@
           <code class="ruby">  def risk_checker</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
+        <li class="covered" data-hits="3" data-linenumber="14">
+          <span class="hits">3</span>
           
           <code class="ruby">    if self.risk == 0 || ((self.risk.to_f / self.orders_checked.to_f) &lt; 0.05)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="15">
-          
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
           
           <code class="ruby">      &quot;Low-Risk&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
           
           <code class="ruby">    elsif (self.risk.to_f / self.orders_checked.to_f) &gt;= 0.05 &amp;&amp; (self.risk.to_f / self.orders_checked.to_f) &lt;= 0.1</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="17">
-          
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
           
           <code class="ruby">      &quot;Medium-Risk&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
           
           <code class="ruby">    elsif (self.risk.to_f / self.orders_checked.to_f) &gt; 0.1</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="19">
-          
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
           <code class="ruby">      &quot;High-Risk&quot;</code>
         </li>
@@ -3381,13 +3391,13 @@
 </div>
 
       
-        <div class="source_table" id="d955939c33ee06997eba8002ff0200f92efcb946">
+        <div class="source_table" id="1d6f621e7f889555e2b855afa52c61f2c24af01c">
   <div class="header">
-    <h3>spec/factories/addresses.rb</h3>
+    <h3>spec/factories/address.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3422,16 +3432,22 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    city(&#39;STATE&#39;)</code>
+          <code class="ruby">    state(&#39;OREGON&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    zip(97206)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -3442,9 +3458,9 @@
 </div>
 
       
-        <div class="source_table" id="a4f01315312c29fe38cc4e975bac4c3568fc06f7">
+        <div class="source_table" id="15e6059b7d0506819c7b76b190759b82fc837c72">
   <div class="header">
-    <h3>spec/factories/reports.rb</h3>
+    <h3>spec/factories/report.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>8</b> relevant lines. 
@@ -3511,6 +3527,211 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="8bd34d59e815913a31530809478848b6afdce5f9">
+  <div class="header">
+    <h3>spec/models/address_risk_checker_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"># def risk_checker</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">#   if self.risk == 0 || ((self.risk.to_f / self.orders_checked.to_f) &lt; 0.05)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">#     &quot;Low-Risk&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">#   elsif (self.risk.to_f / self.orders_checked.to_f) &gt;= 0.05 &amp;&amp; (self.risk.to_f / self.orders_checked.to_f) &lt;= 0.1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">#     &quot;Medium-Risk&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">#   elsif (self.risk.to_f / self.orders_checked.to_f) &gt; 0.1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">#     &quot;High-Risk&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">#   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"># end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &#39;test responses of risk_checker method&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="14">
+          <span class="hits">4</span>
+          
+          <code class="ruby">  let!(:address1) { FactoryBot.create(:address, orders_checked: 20, risk: 0) }</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="15">
+          <span class="hits">4</span>
+          
+          <code class="ruby">  let!(:address2) { FactoryBot.create(:address, street: &#39;123 test st&#39;, orders_checked: 20, risk: 1) }</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="16">
+          <span class="hits">4</span>
+          
+          <code class="ruby">  let!(:address3) { FactoryBot.create(:address, street: &#39;456 test st&#39;, orders_checked: 20, risk: 10) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;expect Low-Risk with &lt; 5% risk to orders&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(address1.risk_checker).to eq(&#39;Low-Risk&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;expect Medium-Risk with &gt; 5% but &lt; 10% risk to orders&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(address2.risk_checker).to eq(&#39;Medium-Risk&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;expect High-Risk with &gt; 10% risk to orders&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(address3.risk_checker).to eq(&#39;High-Risk&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">end</code>

@@ -257,7 +257,8 @@
         null,
         null
       ],
-      "/Users/dan/Desktop/package_fraud/spec/factories/addresses.rb": [
+      "/Users/dan/Desktop/package_fraud/spec/factories/address.rb": [
+        1,
         1,
         1,
         1,
@@ -266,7 +267,7 @@
         null,
         null
       ],
-      "/Users/dan/Desktop/package_fraud/spec/factories/reports.rb": [
+      "/Users/dan/Desktop/package_fraud/spec/factories/report.rb": [
         1,
         1,
         1,
@@ -513,6 +514,39 @@
         null,
         null
       ],
+      "/Users/dan/Desktop/package_fraud/spec/models/address_risk_checker_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        4,
+        4,
+        4,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/dan/Desktop/package_fraud/spec/models/address_spec.rb": [
         1,
         null,
@@ -555,12 +589,12 @@
         1,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        3,
+        1,
+        2,
+        1,
+        1,
+        1,
         null,
         null,
         null,
@@ -626,6 +660,6 @@
         null
       ]
     },
-    "timestamp": 1513723227
+    "timestamp": 1513725044
   }
 }
