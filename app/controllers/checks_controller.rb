@@ -3,22 +3,25 @@ class ChecksController < ApplicationController
     standardize(checks_params)
     if @address = Address.where(street: checks_params[:street], city: checks_params[:city], state: checks_params[:state], zip: checks_params[:zip]).first
       @address.update(orders_checked: (@address.orders_checked + 1))
-      render status: 201, json: { message: "Address is in database. Here is your report.",
+      @safety = @address.risk_checker
+      render status: 201, json: { message: "Address is in database. safety #{@safety}",
                                         id: @address.id,
-                                        rating: @address.street,
-                                        content: @address.city,
-                                        user_id: @address.state,
-                                        destination_id: @address.zip,
+                                        safety_level: @safety,
+                                        street: @address.street,
+                                        city: @address.city,
+                                        state: @address.state,
+                                        zip: @address.zip,
                                         orders_checked: @address.orders_checked,
                                         risk: @address.risk }
     else
       @address = Address.create(street: checks_params[:street], city: checks_params[:city], state: checks_params[:state], zip: checks_params[:zip])
-      render status: 201, json: { message: "Address was not in database. Here is your report.",
+      render status: 201, json: { message: "Address was not in database. It was created.",
                                         id: @address.id,
-                                        rating: @address.street,
-                                        content: @address.city,
-                                        user_id: @address.state,
-                                        destination_id: @address.zip,
+                                        safety_level: "Safe",
+                                        street: @address.street,
+                                        city: @address.city,
+                                        state: @address.state,
+                                        zip: @address.zip,
                                         orders_checked: @address.orders_checked,
                                         risk: @address.risk }
     end
