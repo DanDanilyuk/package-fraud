@@ -4,11 +4,31 @@ class ReportsController < ApplicationController
     if @address = Address.where(street: checks_params[:street], city: checks_params[:city], state: checks_params[:state], zip: checks_params[:zip]).first
       @address.update(orders_checked: (@address.orders_checked + 1))
     else
-      @address = Address.create(street: reports_params[:street], city: reports_params[:city], state: reports_params[:state], zip: reports_params[:zip])
+      @address = Address.create!(street: reports_params[:street], city: reports_params[:city], state: reports_params[:state], zip: reports_params[:zip])
     end
-    @report = Report.create(name: reports_params[:name], date: reports_params[:date], carrier: reports_params[:carrier], notes: reports_params[:notes], code: reports_params[:code], price: reports_params[:price], address_id: @address.id)
+    @report = Report.create!(name: reports_params[:name], date: reports_params[:date], carrier: reports_params[:carrier], notes: reports_params[:notes], code: reports_params[:code], price: reports_params[:price], address_id: @address.id)
     @report.risk_update
-    json_response(@report)
+    @safety = @address.risk_checker
+    @reports = []
+    @address.reports.each do |report|
+      @reports.push(name: report.name,date: report.date,carrier: report.carrier,notes: report.notes,code: report.code,price: report.price)
+    end
+    render status: 200, json: { message: "Your Report Has been Submitted. Thank You.",
+                                id: @report.id,
+                                safety_level: @safety,
+                                street: @address.street,
+                                city: @address.city,
+                                state: @address.state,
+                                zip: @address.zip,
+                                orders_checked: @address.orders_checked,
+                                risk: @address.risk,
+                                reported_name: @report.name,
+                                reported_date: @report.date,
+                                reported_carrier: @report.carrier,
+                                reported_notes: @report.notes,
+                                reported_code: @report.code,
+                                reported_price: @report.price,
+                                reports: @reports }
   end
 
   private
