@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :checks
-  resources :reports
+  resources :check
+  resources :report
 end
