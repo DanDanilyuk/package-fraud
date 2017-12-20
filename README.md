@@ -17,11 +17,16 @@
   <a href="#license">License</a>
 </p>
 
-<div align="center">
-  [![Coverage Status](https://img.shields.io/coveralls/aterris/simplecov-shield.svg)](https://coveralls.io/r/aterris/simplecov-shield?branch=master) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-</div>
-![screenshot](https://raw.githubusercontent.com/dandanilyuk/package_fraud/master/public/img/Package_Fraud_API.gif)
+<p align="center">
+  <a href="http://opensource.org/licenses/MIT"><img src="http://img.shields.io/badge/license-MIT-brightgreen.svg"></a>
+  <a href="https://none.com">
+      <img src="https://img.shields.io/coveralls/aterris/simplecov-shield.svg">
+  </a>
+</p>
 
+<a align="center">
+![screenshot](https://raw.githubusercontent.com/dandanilyuk/package_fraud/master/public/img/Package_Fraud_API.gif)
+</a>
 
 ## Key Features :key:
 
