@@ -11,9 +11,9 @@ class Report < ApplicationRecord
 
   def risk_update
     @address = self.address
-    if self.code == 1||2 && self.price < 500
+    if (self.code == 1 || self.code == 2) && (self.price < 500)
       @address.update(risk: (@address.risk +=2))
-    elsif self.code == 1||2 && self.price > 500
+    elsif (self.code == 1 || self.code == 2) && (self.price > 500)
       @address.update(risk: (@address.risk +=5))
     else
       @address.update(risk: (@address.risk +=1))
