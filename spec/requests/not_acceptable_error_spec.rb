@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "post a destination route", :type => :request do
+describe "return error on unnaceptable post request", :type => :request do
 
   before do
     post '/check', params: { street: '123 Test Ave',city: 'Portland',state: 'Oregon' }
