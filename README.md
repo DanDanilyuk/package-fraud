@@ -24,9 +24,9 @@
   </a>
 </p>
 
-<a align="center">
-![screenshot](https://raw.githubusercontent.com/dandanilyuk/package_fraud/master/public/img/Package_Fraud_API.gif)
-</a>
+<div align="center">
+  <img align="center" src="https://raw.githubusercontent.com/dandanilyuk/package_fraud/master/public/img/Package_Fraud_API.gif">
+</div>
 
 ## Key Features :key:
 
