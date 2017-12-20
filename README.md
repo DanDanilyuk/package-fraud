@@ -10,10 +10,10 @@
 <h6 align="center">Built with <a href="http://guides.rubyonrails.org/" target="_blank">Ruby-On-Rails</a>.</h6>
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#technologies_used">Technologies Used</a> •
+  <a href="#key-features-key">Key Features</a> •
+  <a href="#how-to-use-wrench">How To Use</a> •
+  <a href="#download-arrow_down">Download</a> •
+  <a href="#technologies-used-computer">Technologies Used</a> •
   <a href="#license">License</a>
 </p>
 
