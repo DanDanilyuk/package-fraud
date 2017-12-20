@@ -19,7 +19,6 @@
 
 <div align="center">
   [![Coverage Status](https://img.shields.io/coveralls/aterris/simplecov-shield.svg)](https://coveralls.io/r/aterris/simplecov-shield?branch=master) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-  <br>
 </div>
 ![screenshot](https://raw.githubusercontent.com/dandanilyuk/package_fraud/master/public/img/Package_Fraud_API.gif)
 
