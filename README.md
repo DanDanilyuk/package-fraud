@@ -10,11 +10,11 @@
 <h6 align="center">Built with <a href="http://guides.rubyonrails.org/" target="_blank">Ruby-On-Rails</a>.</h6>
 
 <p align="center">
-  <a href="#key-features-key">Key Features</a> •
-  <a href="#how-to-use-wrench">How To Use</a> •
-  <a href="#download-arrow_down">Download</a> •
-  <a href="#technologies-used-computer">Technologies Used</a> •
-  <a href="#license">License</a>
+  <a href="#user-content-key-features-key">Key Features</a> •
+  <a href="#user-content-how-to-use-wrench">How To Use</a> •
+  <a href="#user-content-download-arrow_down">Download</a> •
+  <a href="#user-content-technologies-used-computer">Technologies Used</a> •
+  <a href="#user-content-license">License</a>
 </p>
 
 <p align="center">
@@ -137,7 +137,6 @@ This software uses code from several open source packages.
 <div align="center">
   <img src="https://avatars2.githubusercontent.com/u/25314425?s=460&v=4" width="100px;"/><br /><sub>Dan Danilyuk</sub>
 </div>
-
 
 
 ## License
