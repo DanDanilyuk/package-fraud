@@ -2,7 +2,6 @@ class ReportController < ApplicationController
   def create
     standardize(checks_params)
     if @address = Address.where(street: checks_params[:street], city: checks_params[:city], state: checks_params[:state], zip: checks_params[:zip]).first
-      @address.update(orders_checked: (@address.orders_checked + 1))
     else
       @address = Address.create!(street: reports_params[:street], city: reports_params[:city], state: reports_params[:state], zip: reports_params[:zip])
     end
