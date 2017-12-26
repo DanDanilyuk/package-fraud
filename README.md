@@ -138,7 +138,6 @@ This software uses code from several open source packages.
   <img src="https://avatars2.githubusercontent.com/u/25314425?s=460&v=4" width="100px;"/><br /><sub>Dan Danilyuk</sub>
 </div>
 
-
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
